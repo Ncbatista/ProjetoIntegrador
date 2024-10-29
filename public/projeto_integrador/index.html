@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Cursos LGPD</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Bem-vindo ao Site de Cursos LGPD</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+        <!-- Abas -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Apresentação</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="curso1-tab" data-toggle="tab" href="#curso1" role="tab" aria-controls="curso1" aria-selected="false">Curso 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="curso2-tab" data-toggle="tab" href="#curso2" role="tab" aria-controls="curso2" aria-selected="false">Curso 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="curso3-tab" data-toggle="tab" href="#curso3" role="tab" aria-controls="curso3" aria-selected="false">Curso 3</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <!-- Aba de Apresentação -->
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <section>
+                    <h2 class="text-center">Sobre Nós</h2>
+                    <p class="text-center">Nosso site oferece uma variedade de cursos online sobre LGPD para você aprender novas habilidades.</p>
+                </section>
+            </div>
+            <!-- Aba Curso 1 -->
+            <div class="tab-pane fade" id="curso1" role="tabpanel" aria-labelledby="curso1-tab">
+                <section>
+                    <h2 class="text-center">Curso 1: Introdução à LGPD</h2>
+                    <p>Aprenda os fundamentos da Lei Geral de Proteção de Dados.</p>
+                    <button class="btn btn-custom" onclick="inscreverCurso('Introdução à LGPD')">Inscrever-se</button>
+                </section>
+            </div>
+            <!-- Aba Curso 2 -->
+            <div class="tab-pane fade" id="curso2" role="tabpanel" aria-labelledby="curso2-tab">
+                <section>
+                    <h2 class="text-center">Curso 2: LGPD para Empresas</h2>
+                    <p>Entenda como implementar a LGPD na sua empresa.</p>
+                    <button class="btn btn-custom" onclick="inscreverCurso('LGPD para Empresas')">Inscrever-se</button>
+                </section>
+            </div>
+            <!-- Aba Curso 3 -->
+            <div class="tab-pane fade" id="curso3" role="tabpanel" aria-labelledby="curso3-tab">
+                <section>
+                    <h2 class="text-center">Curso 3: Segurança de Dados</h2>
+                    <p>Aprenda sobre segurança de dados e conformidade com a LGPD.</p>
+                    <button class="btn btn-custom" onclick="inscreverCurso('Segurança de Dados')">Inscrever-se</button>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-primary text-white text-center py-4">
+        <p>&copy; 2024 Site de Cursos LGPD</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+</html>
